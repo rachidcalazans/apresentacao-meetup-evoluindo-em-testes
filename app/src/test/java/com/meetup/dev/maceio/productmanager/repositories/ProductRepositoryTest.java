@@ -81,13 +81,13 @@ public class ProductRepositoryTest {
         createProduct(title);
 
         boolean result = repository.destroy("Some new");
-        Assert.assertFalse("Shoud not be destroyed", result);
+        Assert.assertFalse("Should not be destroyed", result);
     }
 
     @Test
     public void destroyWithNull() {
         boolean result = repository.destroy(null);
-        Assert.assertFalse("Shoud not be destroyed", result);
+        Assert.assertFalse("Should not be destroyed", result);
 
     }
 
